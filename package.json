@@ -1,0 +1,27 @@
+{
+  "name": "paginasWebFormularios",
+  "version": "1.0.0",
+  "description": "Páginas WEB formularios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanma62/paginas_web_formularios.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "FORMULARIOS"
+  ],
+  "author": "Juan Manuel Salazar Manuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanma62/paginas_web_formularios/issues"
+  },
+  "homepage": "https://github.com/juanma62/paginas_web_formularios#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
