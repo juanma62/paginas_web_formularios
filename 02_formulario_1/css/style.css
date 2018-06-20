@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem;
+}
+
+div {
+  margin-top: 1rem;
+}
+
+.control-group {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.control-group label {
+  width: 8rem;
+  text-align: right;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.perfil-group {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.perfil-group label {
+  width: 8rem;
+  text-align: right;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+/*# sourceMappingURL=css/style.css.map */

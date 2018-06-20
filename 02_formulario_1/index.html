@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header>
+    <form action="formu">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div class="control-group">
+                <label for="nombre">Dime tu nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Pon tu nombre" autofocus>
+            </div>
+            <div class="control-group">
+                <label for="apellido">Dime tu apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Pon tus apellidos">
+            </div>
+            <div class="control-group">
+                <label for="pais">Código de país</label>
+                <input type="text" name="pais" id="pais" value="ES" maxlength="2" placeholder="Sólo código">
+            </div>
+            <div class="control-group">
+                <label for="pais">Contraseña</label>
+                <input type="password" name="contra" id="contra">
+            </div>   
+        </fieldset>
+        <fieldset>
+            <legend>Perfil</legend>
+            <div class="perfil-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" name="correo" id="correo" required>
+            </div>
+            <div class="perfil-group">
+                <label for="url">Página WEB</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div class="perfil-group">
+                <label for="tel">Teléfono</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+            <div class="perfil-group">
+                <label for="buscar">Buscar</label>
+                <input type="search" name="buscar" id="buscar">
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
