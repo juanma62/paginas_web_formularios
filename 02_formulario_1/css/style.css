@@ -6,8 +6,19 @@ body {
   margin: 2rem;
 }
 
+fieldset {
+  margin-top: 1rem;
+}
+
 div {
   margin-top: 1rem;
+}
+
+.botones {
+  margin-top: 1rem;
+}
+.botones input, .botones button {
+  margin-left: 1rem;
 }
 
 .control-group {
@@ -32,6 +43,19 @@ div {
   text-align: right;
   margin-top: 1rem;
   width: 50%;
+}
+
+.textarea-group textarea {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+textarea {
+  width: 20rem;
+  height: 10rem;
 }
 
 /*# sourceMappingURL=css/style.css.map */

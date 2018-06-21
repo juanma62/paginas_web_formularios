@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario 1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./js/funciones.js"></script>
 </head>
 <body>
     <header>
         <h1>Formulario</h1>
     </header>
-    <form action="formu">
+    <form action="">
         <fieldset>
             <legend>Datos personales</legend>
             <div class="control-group">
@@ -25,7 +27,13 @@
             </div>
             <div class="control-group">
                 <label for="pais">Código de país</label>
-                <input type="text" name="pais" id="pais" value="ES" maxlength="2" placeholder="Sólo código">
+                <input type="text" name="pais" id="pais" maxlength="2" list="paises">
+                <datalist id="paises">
+                    <option>ES</option>
+                    <option>FR</option>
+                    <option>GE</option>
+                    <option>UK</option>
+                </datalist>
             </div>
             <div class="control-group">
                 <label for="pais">Contraseña</label>
@@ -36,7 +44,7 @@
             <legend>Perfil</legend>
             <div class="perfil-group">
                 <label for="correo">Correo electrónico</label>
-                <input type="email" name="correo" id="correo" required>
+                <input type="email" name="correo" id="correo">
             </div>
             <div class="perfil-group">
                 <label for="url">Página WEB</label>
@@ -50,8 +58,61 @@
                 <label for="buscar">Buscar</label>
                 <input type="search" name="buscar" id="buscar">
             </div>
+            <div class="perfil-group">
+                <label for="cv">Subir currículum</label>
+                <input type="file" name="cv" id="cv">
+            </div>
         </fieldset>
-        <button type="submit">Enviar</button>
+        <fieldset>
+            <legend>Text Area</legend>
+            <div class="textarea-group">
+                <textarea name="descip" id="descip"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Controles de selección</legend>
+            <div class="textarea-group">
+                <input type="checkbox" name="aceptar" id="aceptar" required>
+                <label for="aceptar">Leídas y aceptadas las condiciones</label>
+            </div>
+            <div class="textarea-group">
+                <input type="checkbox" name="cookies" id="cookies">
+                <label for="cookies">Acepto las cookies</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Selecciona el curso</legend> 
+            <select name="curso" id="curso" size="8" required multiple>
+                <optgroup label="Programación">
+                    <option>Páginas WEB</option>
+                    <option>PHP</option>
+                    <option>Programación en Java</option>
+                </optgroup>
+                <optgroup label="Diseño">
+                    <option>InDesign</option>
+                    <option>Photoshop</option>
+                    <option>Illustrator</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Turno</legend>
+            <div class="textarea-group">
+                <label for="radio">Turno</label>
+                <input type="radio" name="turno" id="manana" value="mañana" required>
+                <label for="manana">Mañana</label>
+                <input type="radio" name="turno" id="tarde" value="tarde">
+                <label for="tarde">Tarde</label>
+            </div>
+        </fieldset>
+        <div class="botones">
+            <input type="submit" value="send">
+            <input type="reset" value="reset">
+            <input type="button" value="Saludo" onclick="saludar()">
+            <button type="submit" title="Enviar"><i class="fas fa-sign-in-alt"></i></button>
+            <button type="reset" title="Borrar"><i class="fas fa-eraser"></i></button>
+            <button type="button" title="Saludar" onclick="saludar2()"><i class="far fa-handshake"></i></button>       
+        </div>
     </form>
 </body>
 </html>
