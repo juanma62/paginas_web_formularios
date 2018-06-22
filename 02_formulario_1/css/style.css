@@ -58,4 +58,13 @@ textarea {
   height: 10rem;
 }
 
+*:required {
+  border: 2px solid red;
+  color: red;
+}
+
+input[type=checkbox] {
+  color: red;
+}
+
 /*# sourceMappingURL=css/style.css.map */

@@ -1,0 +1,31 @@
+.control-group {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 1rem;
+    label {
+        width: 8rem;
+        text-align: right;
+        width: 50%;
+    }
+}
+
+input[type="text"]:required {
+    border: 2px solid rgb(17, 0, 255);
+    color: rgb(4, 0, 255);
+}
+
+input[type="text"]:optional {
+    border: 1px solid gray;
+}
+
+input[type="text"]:invalid {
+    border: 2px solid red;
+}
+
+.botones {
+    margin-top: 1rem;
+    input, button {
+        margin-left: 1rem;
+    }
+}
