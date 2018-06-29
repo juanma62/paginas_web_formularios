@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgray;
+  text-transform: uppercase;
+  color: white;
+}
+
+.item {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0.3rem;
+  background-color: maroon;
+  min-height: 10vh;
+}
+
+nav, main, aside {
+  float: left;
+}
+
+nav, aside {
+  width: 20%;
+}
+
+main {
+  width: 60%;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+/*# sourceMappingURL=css/styles.css.map */
