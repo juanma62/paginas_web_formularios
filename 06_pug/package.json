@@ -1,10 +1,13 @@
 {
-  "name": "paginasWebFormularios",
+  "name": "06_pug",
   "version": "1.0.0",
   "description": "Páginas WEB formularios",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "parallelshell \"npm run pug\" \"npm run server\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug" : "pug -w -P ./src -o ./dis",
+    "server" : "http-server"
   },
   "repository": {
     "type": "git",
