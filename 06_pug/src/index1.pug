@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="./css/style.css")
+        title= titulo
+    body
+        // Esto es un comentario
+        // Esto es un comenario de
+            varias lineas
+            y mas
+        //- Esto es un comentario de pug
+        //- Esto es un comentario de pug
+            de varias líneas
+        // Añadiendo contenido
+
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quae nesciunt labore adipisci suscipit esse reiciendis quisquam aliquid expedita sequi animi quibusdam soluta saepe, blanditiis aliquam voluptas reprehenderit laudantium voluptatum!
+        p Esto es un párrafo Lorem, ipsum dolor sit amet consectetur 
+            |adipisicing elit. Facilis quae nesciunt labore adipisci suscipit esse reiciendis 
+            |quisquam aliquid expedita sequi animi quibusdam soluta saepe, 
+            |blanditiis aliquam voluptas reprehenderit laudantium voluptatum!
+        pre
+            |Esto es un párrafo Lorem, ipsum dolor sit amet consectetur 
+            |adipisicing elit. Facilis quae nesciunt labore adipisci suscipit esse reiciendis 
+            |quisquam aliquid expedita sequi animi quibusdam soluta saepe, 
+            |blanditiis aliquam voluptas reprehenderit laudantium voluptatum!    
+
+        // Añadiendo contenido con atajo
+        pre.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Facilis quae nesciunt labore adipisci suscipit esse reiciendis 
+            quisquam aliquid expedita sequi animi quibusdam soluta saepe, 
+            blanditiis aliquam voluptas reprehenderit laudantium voluptatum!
+
+        h1 Ejemplos de 
+            i PUG
+        p Pug es un 
+            b lenguaje de plantillas 
+            |basado en JS
+        p Pug es un <b> lenguaje de plantillas</b> basado en JS
+
+        // Atributos
+        div(id="div1", class="principal")
+        div#div2.principal
+        #div3.principal
+
+        // Bloques de expansión
+                        - let url = "#"+menuItems[0].toLowerCase()
+                li: a(href=url) #{menuItems[0]}
+                li
+                    a(href="#"+menuItems[1].toLowerCase()) #{menuItems[1]}
+
+        nav
+            ul
+                li
+                    a(href="#"+menuItems[0].toLowerCase()) #{menuItems[0]}
+                li
+                    a(href="#"+menuItems[1].toLowerCase()) #{menuItems[1]}
+                li
+                    a(href="#"+menuItems[2].toLowerCase()) #{menuItems[2]}
+                li
+                    a(href="#"+menuItems[3].toLowerCase()) #{menuItems[3]}
+
+        nav
+            ul
+                li: a(href="#"+menuItems[0].toLowerCase()) #{menuItems[0]}
+                li: a(href="#"+menuItems[1].toLowerCase()) #{menuItems[1]}
+                li: a(href="#"+menuItems[2].toLowerCase()) #{menuItems[2]}
+                li: a(href="#"+menuItems[3].toLowerCase()) #{menuItems[3]}

@@ -1,0 +1,6 @@
+{
+    "idiomas" : "es",
+    "metaLenguaje" : "Pug",
+    "titulo" : "Iniciando PUG",
+    "menuItems" : ["Home", "About", "Pepe", "Juan"]
+}
