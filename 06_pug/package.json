@@ -4,10 +4,10 @@
   "description": "Páginas WEB formularios",
   "main": "index.js",
   "scripts": {
-    "start" : "parallelshell \"npm run pug\" \"npm run server\"",
+    "start": "parallelshell \"npm run pug\" \"npm run server\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pug" : "pug -w -P -O ./config.json ./src -o ./dis",
-    "server" : "http-server"
+    "pug": "pug -w -P -O ./config.json ./src -o ./dis",
+    "server": "http-server"
   },
   "repository": {
     "type": "git",
