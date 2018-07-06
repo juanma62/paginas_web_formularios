@@ -12,75 +12,49 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-2 borde">
-        <p>Izquierda: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, reiciendis atque, eveniet sapiente laboriosam fugiat voluptas eos labore excepturi assumenda facilis distinctio aliquid perspiciatis. Fugit rem nihil fugiat ea? Placeat?</p>
-      </div>
-      <div class="col-1 estrecho"></div>
-      <div class="col-6 borde">
-        <p>Centro: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minus voluptatem magnam sit quis debitis eos ut dolor ipsam quasi eius exercitationem corporis sint repellat quam, perspiciatis, itaque earum illo!</p>
-      </div>
-      <div class="col-1 estrecho"></div>
-      <div class="col-2 borde">
-        <p>Derecha: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem porro animi, doloremque accusantium corporis voluptas velit architecto beatae eligendi, omnis magnam eveniet quasi praesentium eius? Dicta dolores atque dolore!</p>
-      </div>
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-12 raya-footer text-center">
+                    Aprendiendo Bootstrap
+                </h1>
+            </div>
+        </div>
     </div>
-  </div>
-  <header>
-      <h1>Aprendiendo Bootstrap</h1>
-  </header>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Ver más información
-  </button>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Más información</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <div class="container">
+        <div class="row">
+            <div class="row mt-4">
+                <nav class="col-12 col-lg-2">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Active link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled link</a>
+                        </li>
+                        <button type="button" class="btn btn-danger">Acceder</button>
+                    </ul>
+                </nav>
+                <main class="col-12 col-md-8 col-lg-7">
+                    <h2>Contenido</h2>
+                </main>
+                <aside class="col-12 col-md-4 col-lg-3">
+                    <h2>Aside</h2>
+                </aside>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, quidem nesciunt necessitatibus recusandae sit id laboriosam fugit architecto laudantium ipsum amet velit officia illo maiores est itaque molestiae facere non.</p>
+    </div>  
+    <div class="wrapper-footer">
+        <div class="container">
+            <div class="row">
+                <footer class="col-12 raya-footer text-center">
+                    <p>Footer</p>
+                </footer>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
-
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-    Launch
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title" id="modelTitleId">Modal title</h4>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            Add rows here
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
