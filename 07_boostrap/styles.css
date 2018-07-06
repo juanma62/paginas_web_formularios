@@ -1,5 +1,10 @@
 h1 {
     color: brown;
+    background-color: bisque;
+}
+
+body {
+    background-color: bisque;
 }
 
 .estrecho {
