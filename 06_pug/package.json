@@ -4,6 +4,7 @@
   "description": "Páginas WEB formularios",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "parallelshell \"npm run pug\" \"npm run server\" \"npm run sass:vigilar2\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug -w -P -O ./config.json ./src -o ./dis",
@@ -12,6 +13,12 @@
     "sass": "sass ./src/scss:./dis/css",
     "sass:vigilar": "node-sass --watch src/scss -o dis/css",
     "sass:vigilar2": "nodemon -e scss -x \"npm run sass\""
+=======
+    "start": "parallelshell \"npm run pug\" \"npm run server\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug": "pug -w -P -O ./config.json ./src -o ./dis",
+    "server": "http-server"
+>>>>>>> 336906bfe9e6a0b543551546545d6cfdab03e2bb
   },
   "repository": {
     "type": "git",
